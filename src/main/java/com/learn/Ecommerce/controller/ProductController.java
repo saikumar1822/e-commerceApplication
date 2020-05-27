@@ -13,24 +13,24 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.Ecommerce.DTO.ProductDto;
-import com.example.Ecommerce.Exception.ProductNameNotFoundException;
-import com.example.Ecommerce.Model.Category;
-import com.example.Ecommerce.Model.Product;
-import com.example.Ecommerce.Model.User;
-import com.example.Ecommerce.Service.UserService;
+
+import com.learn.Ecommerce.Exception.ProductNameNotFoundException;
+import com.learn.Ecommerce.Model.Category;
+import com.learn.Ecommerce.Model.Product;
+import com.learn.Ecommerce.Model.User;
+import com.learn.Ecommerce.Service.UserService;
 
 @RestController
-public class UserController {
+public class ProductController {
 	
 	@Autowired
-	UserService userService;
+	ProductService productService;
 
 	@GetMapping("/products/{productName}")
 	public ResponseEntity<List<Product>> viewProductName(@PathVariable String productName ) {
 		
 		
-			List<Product> products = userService.viewProductByName(productName);
+			List<Product> products = productService.viewProductByName(productName);
 			
 			return new ResponseEntity<List<Product>>(products,HttpStatus.OK);
 			

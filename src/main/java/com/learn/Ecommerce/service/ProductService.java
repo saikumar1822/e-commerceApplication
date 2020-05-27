@@ -6,16 +6,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import com.example.Ecommerce.DTO.ProductDto;
-import com.example.Ecommerce.Exception.ProductNameNotFoundException;
-import com.example.Ecommerce.Model.Category;
-import com.example.Ecommerce.Model.Product;
-import com.example.Ecommerce.Model.User;
-import com.example.Ecommerce.Repository.ProductRepository;
-import com.example.Ecommerce.Repository.UserRepository;
+import com.learn.Ecommerce.Exception.ProductNameNotFoundException;
+import com.learn.Ecommerce.Model.Category;
+import com.learn.Ecommerce.Model.Product;
+import com.learn.Ecommerce.Model.User;
+import com.learn.Ecommerce.Repository.ProductRepository;
+import com.learn.Ecommerce.Repository.UserRepository;
 
 @Service
-public class UserService {
+public class ProductService {
 	
 	
 	
