@@ -4,8 +4,8 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.example.Ecommerce.DTO.ProductDto;
-import com.example.Ecommerce.Model.Product;
+import com.learn.Ecommerce.DTO.ProductDto;
+import com.learn.Ecommerce.Model.Product;
 
 public interface ProductRepository extends JpaRepository<Product, Integer>{
 
